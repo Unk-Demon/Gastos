@@ -95,3 +95,9 @@ function calcularTotal(){
 
     total.innerHTML = "Total = $" + control.obtenerTotal();
 }
+
+function eliminarTodo(){
+    localStorage.removeItem("gastos");
+
+    location.reload();
+}
