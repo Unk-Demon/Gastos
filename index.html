@@ -9,6 +9,7 @@
         <h2>Gastos diarios</h2>
 
         <form class="form" id="formulario">
+            <h2 id="index">0</h2>
             <input class="form-control" type="number" id="cantidad" placeholder="0.0" required>
             <br>
             <select class="form-select" id="categoria">
@@ -22,6 +23,7 @@
             <textarea class="form-control" id="descripcion" rows="3"></textarea>
             <br>
             <button type="submit" class="btn btn-primary">Guardar</button>
+            <button type="button" style="display: none;" class="btn btn-success" id="confirm">Confirmar</button>
             <button type="button" class="btn btn-danger" onclick="eliminarTodo()">Eliminar todo</button>
         </form>
 
